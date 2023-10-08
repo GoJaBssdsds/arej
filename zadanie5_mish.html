@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zadanie 5  Mishchenko 3K</title>
+    <script language="JavaScript">
+
+        function WinOpen_mishchenko_z3() {
+            window.open("zadanie3_mish.html", "okno_z3",
+            "toolbar=no, directories=no, menubar=no, height=350, width=240, top=200, left=40");
+        }
+
+        function WinOpen_mishchenko_z4() {
+            window.open("z4_mish.html", "okno_z4",
+            "toolbar=no, directories=no, menubar=no, height=700, width=1200, top=200, left=350");
+        }
+
+        function WinOpen_mishchenko_z5() {
+            window.open("z5_mish.html", "okno_z5",
+            "toolbar=no, directories=no, menubar=no, height=350, width=1055, top=30, left=400");
+        }
+
+        function okno_zamknij_mishchenko() {
+            window.close();
+        }
+    </script>
+    <style>
+        p {
+            font-size: 2cm;
+            color: red;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <p>Szkielet zaliczeniowy JavaScript, wykonał Denys Mishchenko klasa 3K</p>
+    <form>
+        <input type="button" name="zadanie3" value="zadanie3 - Mish" onclick="WinOpen_mishchenko_z3(' ')">&nbsp;&nbsp;&nbsp;
+        <input type="button" name="zadanie4" value="zadanie4 - Mish" onclick="WinOpen_mishchenko_z4(' ')">&nbsp;&nbsp;&nbsp;
+        <input type="button" name="zadanie5" value="zadanie5 - Mish" onclick="WinOpen_mishchenko_z5(' ')">&nbsp;&nbsp;&nbsp;
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_mishchenko()" />
+    </form>
+</body>
+</html>

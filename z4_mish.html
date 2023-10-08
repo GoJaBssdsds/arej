@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pl-PL"> 
+<head>
+    <title>Pytania i odpowiedzi o JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        .question {
+            font-weight: bold;
+        }
+        .answer {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pytania i odpowiedzi o JavaScript</h1>
+
+    <div class="question">1) Kiedy powstał JavaScript (podaj datę)?</div>
+    <div class="answer">JavaScript został stworzony w 1995 roku.</div>
+
+    <div class="question">2) Dlaczego jest to język skryptowy?</div>
+    <div class="answer">JavaScript jest językiem skryptowym, ponieważ jego kod jest wykonywany przez przeglądarkę internetową klienta w czasie rzeczywistym, a nie kompilowany przed uruchomieniem. Skrypty JavaScript mogą być dodawane do stron internetowych i interakcje z nimi są obsługiwane natychmiast po załadowaniu strony.</div>
+
+    <div class="question">3) Gdzie jest wykonywany JS (klient lub serwer)?</div>
+    <div class="answer">JavaScript jest wykonywany po stronie klienta (czyli w przeglądarce internetowej użytkownika). Jednak istnieją również środowiska, takie jak Node.js, które pozwalają na uruchamianie kodu JavaScript po stronie serwera.</div>
+
+    <div class="question">4) Dlaczego JavaScript to bezpieczne narzędzie?</div>
+    <div class="answer">JavaScript jest stosunkowo bezpieczny, ponieważ działa w tzw. "piaskownicy" (sandbox), co oznacza, że ma ograniczony dostęp do zasobów komputera użytkownika. Nie może wchodzić w interakcje z systemem operacyjnym ani innymi aplikacjami bez uprzedniej zgody użytkownika. To ograniczenie bezpieczeństwa pomaga zapobiec potencjalnym zagrożeniom.</div>
+
+    <div class="question">5) Czy jest to język obiektowy, jeśli tak to dlaczego?</div>
+    <div class="answer">Tak, JavaScript jest językiem programowania obiektowego. Oznacza to, że w JavaScript wszystko jest obiektem, a programy są budowane poprzez tworzenie i manipulację obiektami. W języku JavaScript obiekty mogą być tworzone dynamicznie i dziedziczyć właściwości od innych obiektów, co jest charakterystyczną cechą języków obiektowych.</div>
+
+    <div class="question">6) Wymień zalety JS:</div>
+    <div class="answer">
+        <ul>
+            <li>Z wysoką dostępnością: JavaScript jest obsługiwany przez większość przeglądarek internetowych, co oznacza, ​​że można go używać na wielu platformach.</li>
+            <li>Z dynamicznością: JavaScript pozwala na dynamiczną manipulację treścią strony internetowej, co umożliwia tworzenie interaktywnych aplikacji internetowych.</li>
+            <li>Z szybkością działania: JavaScript jest językiem o niskim poziomie abstrakcji, co pozwala na szybkie wykonywanie skryptów w przeglądarkach.</li>
+        </ul>
+    </div>
+
+    <div class="question">7) Framework to:</div>
+    <div class="answer">Framework to zestaw narzędzi, bibliotek i standardów, które ułatwiają rozwijanie aplikacji lub projektowanie stron internetowych. Frameworki są używane do przyspieszenia procesu tworzenia oprogramowania poprzez zapewnienie gotowych rozwiązań i struktur.</div>
+
+    <div class="question">8) Do aplikacji mobilnych można użyć Framework?</div>
+    <div class="answer">Tak, istnieją różne frameworki, które pozwalają na rozwijanie aplikacji mobilnych przy użyciu JavaScript, takie jak React Native, Ionic czy NativeScript. Te frameworki pozwalają na tworzenie aplikacji na różne platformy, używając głównie jednego języka - JavaScript.</div>
+
+    <div class="question">9) Aplikacje responsywne to:</div>
+    <div class="answer">Aplikacje responsywne to aplikacje lub strony internetowe, które dostosowują się automatycznie do różnych rozmiarów ekranów i urządzeń. Dzięki temu zapewniają użytkownikom spójne i przyjazne doświadczenie niezależnie od tego, czy korzystają z komputera, tabletu czy smartfona.</div>
+
+    <div class="question">10) Przepisz linie kodu pod nimi wytłumaczenie jak działa ten fragment kodu:</div>
+    <div class="answer">
+        <code>&lt;input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen(' ')"&gt;</code><br>
+        Ta linia kodu tworzy przycisk na stronie internetowej o nazwie "Nowa Strona". Po kliknięciu przycisku, uruchamiana jest funkcja "WinOpen(' ')", która prawdopodobnie jest odpowiedzialna za otwarcie nowego okna lub nowej karty przeglądarki. Jednakże, brak definicji funkcji "WinOpen()" w kodzie, więc dokładne działanie tej linii kodu zależy od tego, jak jest zaimplementowana funkcja "WinOpen()".
+    </div>
+
+    <div class="question">11) Przepisz linie kodu pod nimi wytłumaczenie jak działa ten fragment kodu:</div>
+    <div class="answer">
+        <code>window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");</code><br>
+        Ta linia kodu otwiera nowe okno przeglądarki internetowej, które wyświetla zawartość pliku "obraz.html". Parametry przekazane w drugim argumencie ("okienko") definiują właściwości tego nowego okna, takie jak brak paska narzędziowego (toolbar=no), brak katalogów (directories=no), brak paska menu (menubar=no), określony rozmiar (height=280, width=160) oraz pozycja okna na ekranie (top=200, left=200).
+    </div>
+
+    <div class="question">12) Opisz następującą instrukcję window.close()</div>
+    <div class="answer">Instrukcja <code>window.close()</code> jest używana do zamknięcia aktywnego okna przeglądarki internetowej. Jeśli jest wywoływana w oknie, którego zawartość jest wyświetlana, to to okno zostanie zamknięte. Jednakże, ze względów bezpieczeństwa, wiele przeglądarek internetowych może ograniczać możliwość zamknięcia okna, które nie zostało otwarte przez skrypt JavaScript. Dlatego też działanie tej instrukcji może być ograniczone w niektórych przypadkach.</div>
+
+<button onclick="closeWindow()">Zamknij okno</button>
+
+<script>
+    function closeWindow() {
+        window.close();
+    }
+</script>
+</body>
+</html>
